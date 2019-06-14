@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="column">
+            <h4>Video stream</h4>
+            <video src="" id="video"></video>
+        </div>
+
+        <div class="column">
+            <h4>Predicitions</h4>
+            <canvas id="canvas"></canvas>
+        </div>
+
+    </div>
+
+    <audio src="assets/Stop it. Get some help.mp3" id="audio"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
